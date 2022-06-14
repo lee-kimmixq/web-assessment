@@ -16,15 +16,18 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
     />
 
     <style>
+      /* to remove default curved border radius for buttons, cards etc in bootstrap */
       * {
         border-radius: 0 !important;
       }
 
+      /* grey background when hover */
       .article-div:hover,
       .thesis-div:hover {
         background-color: rgb(209, 209, 209);
       }
 
+      /* responsive background color for cards */
       .card-bg {
         background-color: rgb(206, 206, 206);
       }
@@ -37,8 +40,9 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
     </style>
     <title>Colmar Academy</title>
   </head>
+  <!-- to prevent overscroll so that navbar and footer looks fixed -->
   <body style="overscroll-behavior: none">
-    <!-- Navbar -->
+    <!-- navbar -->
     <header>
       <nav
         class="navbar navbar-expand-md navbar-light bg-white fixed-top px-3 border-bottom"
@@ -49,21 +53,23 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
             src="./assets/images/ic-logo.svg"
             width="30"
             height="30"
-            alt="logo"
+            alt="Colmar Academy Logo"
           />
           <span class="px-1">
             <span class="fw-bold">COLMAR</span>
             <span class="fw-light text-muted">ACADEMY</span>
           </span>
         </a>
-        <div class="d-md-none" data-toggle="collapse">
+
+        <!-- icons navbar for mobile view -->
+        <div class="d-md-none">
           <div class="row min-vw-100">
             <a class="text-center align-self-center col-3" href="#">
               <img
                 src="./assets/images/ic-logo.svg"
                 width="30"
                 height="30"
-                alt="logo"
+                alt="Colmar Academy Logo"
               />
             </a>
             <a class="text-center align-self-center col-3" href="#">
@@ -71,7 +77,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                 src="./assets/images/ic-on-campus.svg"
                 width="30"
                 height="30"
-                alt="logo"
+                alt="On Campus"
               />
             </a>
             <a class="text-center align-self-center col-3" href="#">
@@ -79,7 +85,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                 src="./assets/images/ic-online.svg"
                 width="30"
                 height="30"
-                alt="logo"
+                alt="Online"
               />
             </a>
             <a class="text-center align-self-center col-3" href="#">
@@ -87,11 +93,13 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                 src="./assets/images/ic-login.svg"
                 width="30"
                 height="30"
-                alt="logo"
+                alt="Login"
               />
             </a>
           </div>
         </div>
+
+        <!-- default navbar for desktop view -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -111,6 +119,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
       </nav>
     </header>
 
+    <!-- main content, padding top so that not covered by navbar -->
     <main class="text-break" style="padding-top: 64px">
       <!-- First Section : Information -->
       <div id="information" class="bg-light py-md-4 px-md-4">
@@ -119,12 +128,10 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
             <img
               class="img-fluid"
               src="./assets/images/banner.jpg"
-              alt="banner image"
+              alt="Students Studying"
             />
           </div>
-          <div
-            class="col col-md-5 d-flex flex-column justify-content-center px-3"
-          >
+          <div class="col-md-5 d-flex flex-column justify-content-center px-3">
             <h1 class="fw-bold my-4">Learn something new everyday</h1>
             <p class="fs-5 mt-md-4 mb-md-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -137,7 +144,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
       <!-- Second Section : Articles -->
       <div id="articles" class="px-3 py-md-4 bg-white">
         <div class="row">
-          <!-- Left -->
+          <!-- Left : disappears in mobile view-->
           <div class="col-7 d-none d-md-block">
             <img
               class="img-fluid"
@@ -161,6 +168,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                 <div
                   class="row d-flex flex-column flex-md-row align-items-center"
                 >
+                  <!-- Orientation image - desktop view -->
                   <div class="d-none d-md-block col-4 p-3">
                     <img
                       src="./assets/images/information-orientation.jpg"
@@ -168,6 +176,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                       class="img-fluid"
                     />
                   </div>
+                  <!-- Orientation image - mobile view -->
                   <div class="col d-md-none">
                     <img
                       src="./assets/images/information-orientation-mobile.jpg"
@@ -188,6 +197,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                 <div
                   class="row d-flex flex-column flex-md-row align-items-center"
                 >
+                  <!-- Campus image - desktop view -->
                   <div class="d-none d-md-block col-4 p-3">
                     <img
                       src="./assets/images/information-campus.jpg"
@@ -195,6 +205,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                       class="img-fluid"
                     />
                   </div>
+                  <!-- Campus image - mobile view -->
                   <div class="col d-md-none">
                     <img
                       src="./assets/images/information-campus-mobile.jpg"
@@ -215,6 +226,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                 <div
                   class="row d-flex flex-column flex-md-row align-items-center"
                 >
+                  <!-- Guest Lecture image - desktop view -->
                   <div class="d-none d-md-block col-4 p-3">
                     <img
                       src="./assets/images/information-guest-lecture.jpg"
@@ -222,6 +234,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                       class="img-fluid"
                     />
                   </div>
+                  <!-- Guest Lecture image - mobile view -->
                   <div class="col d-md-none">
                     <img
                       src="./assets/images/information-guest-lecture-mobile.jpg"
@@ -376,9 +389,10 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
               </p>
             </div>
           </div>
-          <!-- Right: Other Articles -->
+          <!-- Right: Other Articles - disappears in mobile view-->
           <div class="d-none d-md-block col-md-5">
             <div class="row d-flex flex-column">
+              <!-- Article (1) -->
               <div class="thesis-div col d-flex align-items-center">
                 <div class="col-4 p-4">
                   <img
@@ -392,6 +406,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
                   <p>Designer showcase of new prototype product</p>
                 </div>
               </div>
+              <!-- Article (2) -->
               <div class="thesis-div col d-flex align-items-center">
                 <div class="col-4 p-4">
                   <img
@@ -421,6 +436,7 @@ Initial Version   Kimmi Lee   June 9, 2022  -->
         </span>
       </div>
 
+      <!-- Terms & Privacy - disappears in mobile view-->
       <ul
         class="nav col-md-4 d-none d-md-inline-flex justify-content-end list-unstyled"
       >
